@@ -2,7 +2,7 @@ import express, { Request, Response } from 'express';
 import axios from 'axios';
 
 const app = express();
-const port = 3000;
+const port = 30100;
 
 app.get('/generate-qr', async (req: Request, res: Response) => {
   const data = (req.query.data as string) || 'Example';
